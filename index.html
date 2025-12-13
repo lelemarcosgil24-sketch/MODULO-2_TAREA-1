@@ -1,115 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Venus Shop</title>
 
-    <style>
-        p{
-            color:blueviolet
-        }
-        .Rosa{
-            color:pink;
-        }
-        .Azul{
-            color:blue;
-        }
-
-        #Rosa{
-            color:pink;
-        }
-        #Azul{
-            color:blue;
-        }
-        #Azul:nth-of-type(3){
-            color:black;
-        }
-
-        div.Azul{
-            color:blue;
-        }
-
-        .block{
-            display:block;
-            background-color:lightgray;
-            margin:5px;
-            padding:5px;
-        }
-        .inline{
-            display:inline;
-            background-color:lightgreen;
-            margin:5px;
-            padding:5px;
-        }
-        .inline-block{
-            display:inline-block;
-            background-color:lightcoral;
-            margin:5px;
-            padding:5px;
-        }
-        .hover:hover{
-            background-color:yellow;
-        }
-        .hover:hover{
-            cursor:pointer;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <H2>Selector con el nombre de la etiqueta</H2>
-    <p>Esto es una prueba</p>
-    <p>Esto es otra prueba</p>
 
-    <h2>Selector con class</h2>
+    <h1>VENUS SHOP</h1>
 
-    <div class="Rosa">Este texto debe ser color rosa</div>
-    <div class="Azul">Este texto debe ser color azul</div>
-    <section class="Azul">Este texto tambien debe ser color azul</section>
+    <h2>Clasificación de productos</h2>
+    <ul>
+        <li>Hogar</li>
+        <li>Belleza</li>
+        <li>Electrónica</li>
+    </ul>
 
+    <h2>Hogar</h2>
+    <div class="fila-imagenes">
+        <img src="https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX679_.jpg">
+        <img src="https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX679_.jpg">
+        <img src="https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX679_.jpg">
+    </div>
 
-    <h2>Selector con id</h2>
-    <div id="Rosa">Este texto debe ser color rosa</div>
-    <div id="Azul">Este texto debe ser color azul</div>
-    <div id="Azul">Este texto no debe ser color azul</div>
+    <h2>Belleza</h2>
+    <div class="fila-imagenes">
+        <img src="https://m.media-amazon.com/images/I/61ObMWL9X3L._AC_SX679_.jpg">
+        <img src="https://m.media-amazon.com/images/I/71J75JN4aeL._AC_SX522_.jpg">
+        <img src="https://m.media-amazon.com/images/I/41HYntBgVhL._AC_SX522_.jpg">
+    </div>
 
-    <p>Class se puede usar para varios elementos, Id solo debe usarse para uno solo</p>
+    <h2>Electrónica</h2>
+    <div class="fila-imagenes">
+        <img src="https://m.media-amazon.com/images/I/71U9WVoGotL._SY500_.jpg">
+        <img src="https://m.media-amazon.com/images/I/81Mr43havQL._AC_SX522_.jpg">
+        <img src="https://m.media-amazon.com/images/I/51tZmKyzHKL._AC_SX522_.jpg">
+    </div>
 
-    <h2>Selectores especificos</h2>
-    <div class="Azul">Este texto debe ser azul</div>
-    <section class="Azul">Este texto no deberia de ser azul</section>
-    <div>Este texto tampoco deberia de ser azul</div>
+    <h3>Te atendemos con amor, tanto como lo que refleja Humbe en sus letras 💜</h3>
 
-    <h2>Display</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/1P-5P-0wBjo"
+        allowfullscreen>
+    </iframe>
 
-    <p>Div ya se comporta con display:block por defecto <br>
-    Span ya se comporta con display:inline por defecto</p>
+    <h3>Deja tus datos para recibir ofertas</h3>
+    <form>
+        <label>Nombre:</label>
+        <input type="text">
 
-    <div>Este es un texto</div>
-    <div>Este es otro texto</div>
-    <span>Este es un texto sobre la misma linea</span>
-    <span>Esta tambien</span>
+        <label>Email:</label>
+        <input type="email">
 
-    <p>Ejemplos de block vs inline</p>
+        <input type="submit" value="Enviar">
+    </form>
 
-    <div class="block">block</div>
-    <div class="block">block</div>
-    <div class="inline">inline</div><div class="inline">inline</div>
-    <div class="block">block</div>
+    <div class="encima">Este elemento cambia de color si se pasa el cursor por encima</div>
 
-    <p>Ejemplos de inline solamente</p>
-    <div class="inline">inliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiine</div>
-    <div class="inline">inliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiine</div>
-    <div class="inline">inliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiine</div>
-
-    <p>Ejemplos de inline-block</p>
-    <div class="block">bloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooock</div>
-    <div class="inline-block">inline-bloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooook</div>
-    <div class="inline">inlineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
-
-    <h2>Ejemplo de pseudoclase</h2>
-
-    <div class="encima">Este elemento cambia de color si se pasa el cursos por encima</div>
 </body>
 </html>
