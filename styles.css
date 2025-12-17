@@ -76,3 +76,13 @@ iframe {
 .encima:hover {
     background-color: #b3d4ff;
 }
+
+.marca {
+    color: #b300b3;
+    font-weight: bold;
+}
+
+.oferta {
+    color: rgb(4, 0, 255);
+    font-weight: bold;
+}
