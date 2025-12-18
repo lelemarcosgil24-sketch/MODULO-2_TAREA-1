@@ -1,15 +1,22 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venus Shop</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1><span class="marca">VENUS</span> SHOP</h1>
+    <nav class="navbar">
+        <div class="logo">VENUS SHOP</div>
+        <div class="nav-links">
+            <a href="#hogar">Hogar</a>
+            <a href="#belleza">Belleza</a>
+            <a href="#electronica">Electrónica</a>
+            <a href="#ofertas">Ofertas</a>
+        </div>
+    </nav>
 
     <h2>Clasificación de productos</h2>
     <ul>
@@ -18,56 +25,73 @@
         <li>Electrónica</li>
     </ul>
 
-    <h2>Hogar</h2>
+    <h2 id="hogar">Hogar</h2>
+<div class="fila-imagenes">
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX679_.jpg" alt="Cortina negra de tol">
+        <p class="nombre">Cortina negra de tol</p>
+        <p class="descripcion">Cortina elegante para sala o dormitorio</p>
+        <span class="precio">$349</span>
+    </div>
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX679_.jpg" alt="Cortina negra sólida">
+        <p class="nombre">Cortina negra sólida</p>
+        <p class="descripcion">Material resistente y fácil de lavar</p>
+        <span class="precio">$299</span>
+    </div>
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX679_.jpg" alt="Cortina negra de entrellas">
+        <p class="nombre">Cortina negra de entrellas</p>
+        <p class="descripcion">Diseño moderno con transparencia sutil</p>
+        <span class="precio">$399</span>
+    </div>
+</div>
+
+    <h2 id="belleza">Belleza</h2>
     <div class="fila-imagenes">
-        <img src="https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX679_.jpg" alt="Producto hogar">
-        <img src="https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX679_.jpg" alt="Producto hogar">
-        <img src="https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX679_.jpg" alt="Producto hogar">
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/61ObMWL9X3L._AC_SX679_.jpg" alt="Rimel PROSA negro">
+        <p class="nombre">Rimel PROSA negro</p>
+        <p class="descripcion">Para unas pestañas largas y definidas</p>
+        <span class="precio">$149</span>
     </div>
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/71J75JN4aeL._AC_SX522_.jpg" alt="Rimel PROSA rosa">
+        <p class="nombre">Rimel PROSA rosa</p>
+        <p class="descripcion">Color único para resaltar tu mirada</p>
+        <span class="precio">$159</span>
+    </div>
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/41HYntBgVhL._AC_SX522_.jpg" alt="Rimel PROSA gris">
+        <p class="nombre">Rimel PROSA gris</p>
+        <p class="descripcion">Perfecto para un look natural</p>
+        <span class="precio">$149</span>
+    </div>
+</div>
 
-    <h2>Belleza</h2>
+    <h2 id="electronica">Electrónica</h2>
     <div class="fila-imagenes">
-        <img src="https://m.media-amazon.com/images/I/61ObMWL9X3L._AC_SX679_.jpg" alt="Producto belleza">
-        <img src="https://m.media-amazon.com/images/I/71J75JN4aeL._AC_SX522_.jpg" alt="Producto belleza">
-        <img src="https://m.media-amazon.com/images/I/41HYntBgVhL._AC_SX522_.jpg" alt="Producto belleza">
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/71U9WVoGotL._SY500_.jpg" alt="Cable entrada C">
+        <p class="nombre">Cable entrada C</p>
+        <p class="descripcion">Carga rápida y estable para tus dispositivos</p>
+        <span class="precio">$99</span>
     </div>
-
-    <h2>Electrónica</h2>
-    <div class="fila-imagenes">
-        <img src="https://m.media-amazon.com/images/I/71U9WVoGotL._SY500_.jpg" alt="Producto electrónico">
-        <img src="https://m.media-amazon.com/images/I/81Mr43havQL._AC_SX522_.jpg" alt="Producto electrónico">
-        <img src="https://m.media-amazon.com/images/I/51tZmKyzHKL._AC_SX522_.jpg" alt="Producto electrónico">
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/81Mr43havQL._AC_SX522_.jpg" alt="Cable micro USB">
+        <p class="nombre">Cable de entrada micro</p>
+        <p class="descripcion">Compatible con la mayoría de smartphones</p>
+        <span class="precio">$89</span>
     </div>
-
-    <p class="aviso">
-        Aprovecha nuestras <span class="oferta">OFERTAS</span> esta semana
-    </p>
-
-     <section class="seccion">
-    <h2>OFERTAS EN PALETAS DE SOMBRAS</h2>
-    <div class="flex-container">
-    <div class="card">
-    <img src="https://yuyatiendaoficial.com/cdn/shop/products/7506110683100_2_5eefa8cc-890d-4a9c-9d50-284cc3297066.jpg?v=1741277878" alt="Paleta 12 tonos yuya">
-    <p>Paleta 12 tonos de Yuya</p>
-    <span>$149</span>
+    <div class="producto">
+        <img src="https://m.media-amazon.com/images/I/51tZmKyzHKL._AC_SX522_.jpg" alt="Cubo con entrada C">
+        <p class="nombre">Cubo con entrada C</p>
+        <p class="descripcion">Ideal para organizar tus cargadores</p>
+        <span class="precio">$129</span>
     </div>
-    <div class="card oferta">
-    <img src="https://m.media-amazon.com/images/I/61N48DfQy4L._AC_SL1200_.jpg" alt="Paleta Ojos de vida Yuya">
-    <p>Paleta Ojos de vida Yuya</p>
-    <span>$199</span>
-    </div>
-    </div>
-    </section>
-
-    <h3>Te atendemos con amor, tanto como lo que refleja Humbe en sus letras 💜</h3>
-
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/1P-5P-0wBjo"
-        title="Video de Humbe"
-        allowfullscreen>
-    </iframe>
+</div>
+    <h3>Te atendemos con amor 💜</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1P-5P-0wBjo" title="Video de Humbe" allowfullscreen></iframe>
 
     <h3>Deja tus datos para recibir ofertas</h3>
     <form>
@@ -82,6 +106,11 @@
 
     <div class="encima">
         Este elemento cambia de color si se pasa el cursor por encima
+    </div>
+
+    <div class="cookie-footer">
+        <p>Este sitio utiliza cookies para mejorar la experiencia. <a href="#cookies-policy">Más información</a>.</p>
+        <button class="cookie-accept">Aceptar</button>
     </div>
 
 </body>
