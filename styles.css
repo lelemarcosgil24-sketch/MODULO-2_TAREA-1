@@ -5,7 +5,7 @@ body {
     background-color: #fdf4ff;
 }
 
-/* position: sticky */
+
 h1 {
     text-align: center;
     color: purple;
@@ -16,7 +16,7 @@ h1 {
     z-index: 10;
 }
 
-/* position: static */
+
 h2 {
     position: static;
     color: #b300b3;
@@ -27,22 +27,22 @@ ul {
     font-size: 18px;
 }
 
-/* FLEX CONTAINER */
+
 .fila-imagenes {
     display: flex;
-    flex-direction: row;          /* flex-direction */
-    justify-content: space-around;/* justify-content */
-    align-content: center;        /* align-content */
-    flex-wrap: wrap;              /* flex-wrap */
+    flex-direction: row;          
+    justify-content: space-around;
+    align-content: center;        
+    flex-wrap: wrap;              
     gap: 20px;
     margin-top: 15px;
 }
 
-/* FLEX ITEMS */
+
 .fila-imagenes img {
-    flex-basis: 250px;  /* flex-basis */
-    flex-grow: 1;       /* flex-grow */
-    flex-shrink: 1;     /* flex-shrink */
+    flex-basis: 250px;  
+    flex-grow: 1;       
+    flex-shrink: 1;     
 
     width: 280px;
     height: 280px;
@@ -90,7 +90,7 @@ iframe {
     border-radius: 10px;
 }
 
-/* hover */
+
 .encima {
     background-color: rgb(183, 215, 252);
     padding: 10px;
@@ -102,13 +102,13 @@ iframe {
     background-color: #b3d4ff;
 }
 
-/* Marca */
+
 .marca {
     color: #b300b3;
     font-weight: bold;
 }
 
-/* position: absolute */
+
 .aviso {
     position: relative;
     margin-top: 30px;
