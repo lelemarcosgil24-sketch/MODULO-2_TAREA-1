@@ -5,13 +5,17 @@ body {
     background-color: #fdf4ff;
 }
 
+h1, h2, h3 {
+    margin: 0 0 15px 0;
+}
+
 h1 {
     text-align: center;
     color: purple;
     position: sticky;
     top: 0;
     background-color: #fdf4ff;
-    padding: 10px;
+    padding: 10px 0;
     z-index: 10;
 }
 
@@ -20,9 +24,15 @@ h2 {
     margin-top: 40px;
 }
 
+h3 {
+    color: purple;
+    margin-top: 30px;
+}
+
 ul {
     font-size: 18px;
 }
+
 
 .navbar {
     display: flex;
@@ -71,6 +81,7 @@ ul {
     background-color: #b300b3;
     border-radius: 2px;
 }
+
 
 .fila-imagenes {
     display: flex;
@@ -123,6 +134,7 @@ ul {
     margin-top: 5px;
 }
 
+
 form {
     margin: 30px auto;
     background: white;
@@ -156,12 +168,14 @@ input[type="submit"]:hover {
     background-color: #b300b3;
 }
 
+
 iframe {
     display: block;
     margin: 20px auto;
     border-radius: 10px;
     max-width: 100%;
 }
+
 
 .encima {
     background-color: rgb(183, 215, 252);
@@ -173,6 +187,53 @@ iframe {
 .encima:hover {
     background-color: #b3d4ff;
 }
+
+
+.aviso {
+    position: relative;
+    margin-top: 30px;
+}
+
+.oferta {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    padding: 15px;
+    border: 2px solid #d19cd1;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 .cookie-footer {
     position: fixed;
@@ -204,6 +265,7 @@ iframe {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 @media (max-width: 600px) {
     body {
@@ -237,7 +299,7 @@ iframe {
         align-items: center;
     }
 
-    .producto {
+    .producto, .card {
         width: 100%;
         max-width: 300px;
     }
@@ -250,7 +312,7 @@ iframe {
         gap: 20px;
     }
 
-    .producto {
+    .producto, .card {
         width: 45%;
     }
 }
@@ -261,22 +323,7 @@ iframe {
         justify-content: space-around;
     }
 
-    .producto {
+    .producto, .card {
         width: 250px;
     }
-}
-.aviso {
-    position: relative;
-    margin-top: 30px;
-}
-
-.oferta {
-    position: absolute;
-    top: -10px;
-    right: -20px;
-    background-color: blue;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
 }
