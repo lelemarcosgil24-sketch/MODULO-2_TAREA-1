@@ -1,336 +1,102 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #fdf4ff;
     margin: 0;
-    padding: 20px;
-    background-color: #fdf4ff;
-}
-
-h1, h2, h3 {
-    margin: 0 0 15px 0;
-}
-
-h1 {
-    text-align: center;
-    color: purple;
-    position: sticky;
-    top: 0;
-    background-color: #fdf4ff;
-    padding: 10px 0;
-    z-index: 10;
-}
-
-h2 {
-    color: #b300b3;
-    margin-top: 40px;
-}
-
-h3 {
-    color: purple;
-    margin-top: 30px;
-}
-
-ul {
-    font-size: 18px;
-}
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fdf4ff;
-    padding: 10px 20px;
-    border-bottom: 2px solid #d19cd1;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+        padding: 20px;
 }
 
 .logo {
-    font-weight: bold;
+    text-align: center;
     color: purple;
-    font-size: 20px;
 }
 
-.nav-links {
+.navbar {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
-.nav-links a {
+.navbar a {
     text-decoration: none;
     color: #b300b3;
-    font-weight: bold;
-    transition: color 0.3s ease;
+        font-weight: bold;
 }
 
-.nav-links a:hover {
-    color: purple;
+.vista {
+        display: none;
+    text-align: center;
 }
 
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
+.vista.activa {
+    display: block;
 }
 
-.nav-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: #b300b3;
-    border-radius: 2px;
-}
+.titulo-principal {
+    font-size: 60px;
+    margin: 60px 0;
+        color: purple;
+    }
 
-
-.fila-imagenes {
-    display: flex;
-    flex-wrap: wrap;
+.fila-imagenes,
+.flex-container {
+        display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 15px;
+        flex-wrap: wrap;
 }
 
-.producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    background-color: #fff;
-    padding: 10px;
+.producto, .card {
+    background: white;
+    padding: 15px;
+        width: 250px;
     border-radius: 10px;
     border: 1px solid #d19cd1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.producto img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.nombre {
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.descripcion {
-    font-size: 14px;
-    color: #555;
-    text-align: center;
-    margin: 5px 0;
-}
-
-.precio {
-    color: purple;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 260px;
-    padding: 15px;
-    border: 2px solid #d19cd1;
-    border-radius: 10px;
-    background-color: white;
-    text-align: center;
     position: relative;
 }
 
+.producto img,
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+        width: 100%;
+    border-radius: 8px;
+    }
+
+.precio {
+    color: purple;
+        font-weight: bold;
 }
 
 .oferta {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: blue;
+    top: 10px;
+    left: 10px;
+    background: purple;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-weight: bold;
-    z-index: 5;
-}
-
-
+    font-size: 12px;
+    }
+.
 form {
     margin: 30px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    border: 2px solid #d19cd1;
+        width: 300px;
 }
 
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    margin-bottom: 10px;
+input {
+        width: 100%;
     padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #b300b3;
+        margin-bottom: 10px;
 }
 
 input[type="submit"] {
-    background-color: purple;
-    color: white;
-    padding: 10px;
-    width: 100%;
+background: purple;
+        color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #b300b3;
-}
-
-
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
 iframe {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-
-.encima {
-    background-color: rgb(183, 215, 252);
-    padding: 10px;
-    width: fit-content;
-    transition: background-color 0.3s ease;
-}
-
-.encima:hover {
-    background-color: #b3d4ff;
-}
-
-
-.aviso {
-    position: relative;
-    margin-top: 30px;
-}
-
-
-.cookie-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #fdf4ff;
-    border-top: 2px solid #d19cd1;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cookie-footer p {
-    margin: 0;
-}
-
-.cookie-footer a {
-    color: purple;
-    text-decoration: none;
-}
-
-.cookie-footer button {
-    background-color: purple;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        gap: 10px;
-        background-color: #fdf4ff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        border-top: 1px solid #d19cd1;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-toggle {
-        display: flex;
-    }
-
-    .fila-imagenes {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
-
-    .producto, .card {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    .fila-imagenes {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .producto, .card {
-        width: 45%;
-    }
-}
-
-@media (min-width: 1025px) {
-    .fila-imagenes {
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
-    .producto, .card {
-        width: 250px;
-    }
-
-   
-    .flex-container {
-        flex-wrap: nowrap;
-    }
+    margin-top: 20px;
+        border-radius: 10px;
 }

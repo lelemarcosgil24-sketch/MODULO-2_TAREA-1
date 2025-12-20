@@ -8,186 +8,101 @@
 </head>
 <body>
 
-    <header>
-        <h1 class="logo">VENUS SHOP</h1>
+<header>
+    <h1 class="logo">VENUS SHOP</h1>
 
-        <nav class="navbar" aria-label="Menú principal">
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <nav class="navbar">
+        <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a href="#" onclick="mostrarSeccion('hogar')">Hogar</a>
+        <a href="#" onclick="mostrarSeccion('belleza')">Belleza</a>
+        <a href="#" onclick="mostrarSeccion('electronica')">Electrónica</a>
+        <a href="#" onclick="mostrarSeccion('ofertas')">Ofertas</a>
+    </nav>
+</header>
 
-            <div class="nav-links" id="nav-links">
-                <a href="#hogar">Hogar</a>
-                <a href="#belleza">Belleza</a>
-                <a href="#electronica">Electrónica</a>
-                <a href="#ofertas">Ofertas</a>
-            </div>
-        </nav>
-    </header>
+<!-- INICIO -->
+<section id="inicio" class="vista activa">
+    <h1 class="titulo-principal">VENUS SHOP</h1>
 
-    <section class="clasificacion">
-        <h2>Clasificación de productos</h2>
-        <ul>
-            <li>Hogar</li>
-            <li>Belleza</li>
-            <li>Electrónica</li>
-        </ul>
-    </section>
+    <h3>Te atendemos con amor 💜</h3>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/1P-5P-0wBjo"
+        allowfullscreen>
+    </iframe>
+</section>
 
-    <section id="hogar">
-        <h2>Hogar</h2>
-        <div class="fila-imagenes">
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX679_.jpg" 
-                     srcset="https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX679_.jpg 679w, 
-                             https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX522_.jpg 522w, 
-                             https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX425_.jpg 425w"
-                     sizes="(max-width:600px) 100vw, (max-width:1024px) 50vw, 33vw"
-                     alt="Cortina negra elegante para sala o dormitorio">
-                <p class="nombre">Cortina negra de tol</p>
-                <p class="descripcion">Cortina elegante para sala o dormitorio</p>
-                <span class="precio">$349</span>
-            </article>
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX679_.jpg"
-                     srcset="https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX679_.jpg 679w,
-                             https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX522_.jpg 522w,
-                             https://m.media-amazon.com/images/I/71WCBWUEtXL._AC_SX425_.jpg 425w"
-                     sizes="(max-width:600px) 100vw, (max-width:1024px) 50vw, 33vw"
-                     alt="Cortina negra sólida de material resistente">
-                <p class="nombre">Cortina negra sólida</p>
-                <p class="descripcion">Material resistente y fácil de lavar</p>
-                <span class="precio">$299</span>
-            </article>
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX679_.jpg"
-                     srcset="https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX679_.jpg 679w,
-                             https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX522_.jpg 522w,
-                             https://m.media-amazon.com/images/I/71WAY1r7fcL._AC_SX425_.jpg 425w"
-                     sizes="(max-width:600px) 100vw, (max-width:1024px) 50vw, 33vw"
-                     alt="Cortina negra de entrellas con diseño moderno">
-                <p class="nombre">Cortina negra de entrellas</p>
-                <p class="descripcion">Diseño moderno con transparencia sutil</p>
-                <span class="precio">$399</span>
-            </article>
+<!-- HOGAR -->
+<section id="hogar" class="vista">
+    <h2>Hogar</h2>
+    <div class="fila-imagenes">
+        <article class="producto">
+            <img src="https://m.media-amazon.com/images/I/71Ar9zwqGTS._AC_SX679_.jpg">
+            <p class="nombre">Cortina negra</p>
+            <span class="precio">$349</span>
+        </article>
+    </div>
+</section>
+
+<!-- BELLEZA -->
+<section id="belleza" class="vista">
+    <h2>Belleza</h2>
+    <div class="fila-imagenes">
+        <article class="producto">
+            <img src="https://m.media-amazon.com/images/I/61ObMWL9X3L._AC_SX679_.jpg">
+            <p class="nombre">Rímel PROSA</p>
+            <span class="precio">$149</span>
+        </article>
+    </div>
+</section>
+
+<!-- ELECTRÓNICA -->
+<section id="electronica" class="vista">
+    <h2>Electrónica</h2>
+    <div class="fila-imagenes">
+        <article class="producto">
+            <img src="https://m.media-amazon.com/images/I/71U9WVoGotL._SY500_.jpg">
+            <p class="nombre">Cable entrada C</p>
+            <span class="precio">$99</span>
+        </article>
+    </div>
+</section>
+
+<!-- OFERTAS -->
+<section id="ofertas" class="vista">
+    <h2>Ofertas en paletas de sombras</h2>
+
+    <div class="flex-container">
+        <div class="card">
+            <span class="oferta">OFERTA</span>
+            <img src="https://yuyatiendaoficial.com/cdn/shop/products/7506110683100_2_5eefa8cc-890d-4a9c-9d50-284cc3297066.jpg">
+            <p>Paleta 12 tonos Yuya</p>
+            <span>$149</span>
         </div>
-    </section>
 
-    <section id="belleza">
-        <h2>Belleza</h2>
-        <div class="fila-imagenes">
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/61ObMWL9X3L._AC_SX679_.jpg"
-                     alt="Rimel PROSA negro para pestañas largas y definidas">
-                <p class="nombre">Rimel PROSA negro</p>
-                <p class="descripcion">Para unas pestañas largas y definidas</p>
-                <span class="precio">$149</span>
-            </article>
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/71J75JN4aeL._AC_SX522_.jpg"
-                     alt="Rimel PROSA rosa color único">
-                <p class="nombre">Rimel PROSA rosa</p>
-                <p class="descripcion">Color único para resaltar tu mirada</p>
-                <span class="precio">$159</span>
-            </article>
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/41HYntBgVhL._AC_SX522_.jpg"
-                     alt="Rimel PROSA gris look natural">
-                <p class="nombre">Rimel PROSA gris</p>
-                <p class="descripcion">Perfecto para un look natural</p>
-                <span class="precio">$149</span>
-            </article>
+        <div class="card">
+            <span class="oferta">OFERTA</span>
+            <img src="https://m.media-amazon.com/images/I/61N48DfQy4L._AC_SL1200_.jpg">
+            <p>Paleta Ojos de Vida Yuya</p>
+            <span>$199</span>
         </div>
-    </section>
-
-
-    <section id="electronica">
-        <h2>Electrónica</h2>
-        <div class="fila-imagenes">
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/71U9WVoGotL._SY500_.jpg"
-                     alt="Cable entrada C para carga rápida">
-                <p class="nombre">Cable entrada C</p>
-                <p class="descripcion">Carga rápida y estable para tus dispositivos</p>
-                <span class="precio">$99</span>
-            </article>
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/81Mr43havQL._AC_SX522_.jpg"
-                     alt="Cable de entrada micro USB compatible">
-                <p class="nombre">Cable de entrada micro</p>
-                <p class="descripcion">Compatible con la mayoría de smartphones</p>
-                <span class="precio">$89</span>
-            </article>
-            <article class="producto">
-                <img src="https://m.media-amazon.com/images/I/51tZmKyzHKL._AC_SX522_.jpg"
-                     alt="Cubo con entrada C para organización de cargadores">
-                <p class="nombre">Cubo con entrada C</p>
-                <p class="descripcion">Ideal para organizar tus cargadores</p>
-                <span class="precio">$129</span>
-            </article>
-        </div>
-    </section>
-
-    <section id="ofertas">
-        <h2>Ofertas en paletas de sombras</h2>
-        <div class="flex-container">
-            <div class="card">
-                <span class="oferta">OFERTA</span>
-                <img src="https://yuyatiendaoficial.com/cdn/shop/products/7506110683100_2_5eefa8cc-890d-4a9c-9d50-284cc3297066.jpg?v=1741277878" alt="Paleta 12 tonos Yuya">
-                <p>Paleta 12 tonos de Yuya</p>
-                <span>$149</span>
-            </div>
-            <div class="card oferta">
-                <span class="oferta">OFERTA</span>
-                <img src="https://m.media-amazon.com/images/I/61N48DfQy4L._AC_SL1200_.jpg" alt="Paleta Ojos de Vida Yuya">
-                <p>Paleta Ojos de Vida Yuya</p>
-                <span>$199</span>
-            </div>
-        </div>
-    </section>
-
-   
-    <section>
-        <h3>Te atendemos con amor 💜</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1P-5P-0wBjo" title="Video de Humbe" allowfullscreen></iframe>
-    </section>
-
-  
-    <section>
-        <h3>Deja tus datos para recibir ofertas</h3>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
-
-   
-    <div class="encima">
-        Este elemento cambia de color si se pasa el cursor por encima
     </div>
 
-   
-    <footer class="cookie-footer">
-        <p>Este sitio utiliza cookies para mejorar la experiencia. <a href="#cookies-policy">Más información</a>.</p>
-        <button class="cookie-accept">Aceptar</button>
-    </footer>
+    <h3>Deja tus datos para recibir ofertas</h3>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
 
-    
-    <script>
-        const toggle = document.getElementById('nav-toggle');
-        const links = document.getElementById('nav-links');
-
-        toggle.addEventListener('click', () => {
-            links.classList.toggle('active');
-        });
-    </script>
+<script>
+function mostrarSeccion(id) {
+    document.querySelectorAll('.vista').forEach(sec => {
+        sec.classList.remove('activa');
+    });
+    document.getElementById(id).classList.add('activa');
+}
+</script>
 
 </body>
 </html>
